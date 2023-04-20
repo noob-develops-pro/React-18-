@@ -11,6 +11,11 @@ function GreetPerson() {
 function App() {
   return (
     <div>
+      <h1
+        style={{ display: 'grid', justifyContent: 'center', marginTop: '1rem' }}
+      >
+        Best Seller Books
+      </h1>
       <BookList />
     </div>
   )

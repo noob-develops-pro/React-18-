@@ -1,4 +1,4 @@
-function Book({ id, auther, title, imgUrl, logTheProp, getBook }) {
+function Book({ id, number, auther, title, imgUrl, logTheProp, getBook }) {
   const logTheName = (e) => {
     console.log(title)
     console.log(auther)
@@ -9,6 +9,7 @@ function Book({ id, auther, title, imgUrl, logTheProp, getBook }) {
   }
   return (
     <div className='book'>
+      <div className='number'>{`# ${number + 1}`}</div>
       <img className='img' src={imgUrl} alt={title} />
       <h2>{title}</h2>
       <h4>{auther}</h4>
